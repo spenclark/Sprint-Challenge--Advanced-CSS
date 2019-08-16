@@ -40,7 +40,7 @@ Mobile first: Start with small design (mobile) and work you way up to desktop
 Desktop first: Start large design (desktop) and work you way down to mobile
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
-Since rem is related to whats declared in the html 
+Since rem works with what is declared in the html you would be working with 62.5% of the default font size (12px/62.5%)
 
 4. How would you describe preprocessing to someone new to CSS?
 A comb that goes through all your code and lets diffrent languages work togehther
