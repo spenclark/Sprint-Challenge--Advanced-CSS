@@ -18,12 +18,19 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    @media @phone {
+      .nodisplay-mobile{
+        display: none;
+      .img{
+        
+      }
+      }
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      }
     }
   }
 
@@ -59,6 +66,13 @@
 
       .btn{
         width: 50%;
+        @media @phone {
+          width: 100%;
+          a{
+            width: 100%;
+            padding: 10px 30px;
+          }
+        }
         a{
           padding: 10px 30px;
           color: @color4;
@@ -71,10 +85,17 @@
        }
      }
 
+    .walk{
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .walk-img {
       width: 46%;
       margin-left: 4%;
       
+      }            
       img {
         width: 100%;
         height: auto;
