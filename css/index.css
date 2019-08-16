@@ -196,7 +196,7 @@ p {
   }
 }
 .navigation .nav-links {
-  width: 60%;
+  width: 30%;
   font-size: 3rem;
 }
 @media (max-width: 500px) {
