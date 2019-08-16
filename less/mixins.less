@@ -1,1 +1,32 @@
 // Mixins Here
+
+@color1: #2E4349;
+@color2: white;
+@color3: #32A7EF;
+@color4: ivory;
+
+@center-flex: center;
+
+
+.center-layout(@center-v, @center-h){
+	display: flex; 
+	justify-content: @center-h;
+    align-items: @center-v;
+}
+// form mixin
+.form-parent-mix{
+    display: flex;
+    flex-direction: column;
+}
+
+
+// btn
+
+.button-mixin{
+    background-color: @btn-bg-color;
+    &:hover{
+        color: @border-real;
+        background-color: @river-bend
+    }
+    .center-layout(center, center);
+}
