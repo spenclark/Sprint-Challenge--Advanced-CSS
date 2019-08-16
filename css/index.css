@@ -2,19 +2,15 @@
   display: flex;
   flex-direction: column;
 }
-.form-child-mix {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
 .button-mixin {
   background-color: #22283A;
-  color: ivory;
-  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.button-mixin:hover {
+  color: #dee2e6;
+  background-color: #454A59;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -192,9 +188,21 @@ p {
   font-size: 5rem;
   padding: 1% 0%;
 }
+@media (max-width: 500px) {
+  .navigation .nav-header {
+    width: 100%;
+    font-size: 3rem;
+  }
+}
 .navigation .nav-links {
   width: 60%;
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .navigation .nav-links {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
 .navigation .nav-links nav {
   display: flex;
@@ -258,14 +266,22 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
-  width: 25%;
-  padding: 4% 5%;
-  background-color: #22283A;
+  width: 50%;
+}
+.home .walk .walk-text .btn a {
+  padding: 10px 30px;
   color: ivory;
+  font-size: 2rem;
+  text-decoration: none;
   border-radius: 5px;
+  background-color: #22283A;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .walk .walk-text .btn a:hover {
+  color: #dee2e6;
+  background-color: #454A59;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -275,4 +291,35 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.form {
+  margin-top: 5%;
+}
+.form-class {
+  display: flex;
+  flex-direction: column;
+}
+.form-class .form-box {
+  padding: 1% 0%;
+}
+.form-class .form-box:hover {
+  border: 1px #32A7EF solid;
+}
+.form-btn {
+  padding: 10px 30px;
+  color: ivory;
+  font-size: 2rem;
+  border-radius: 5px;
+  background-color: #22283A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-btn a {
+  text-decoration: none;
+  color: ivory;
+}
+.form-btn:hover {
+  color: #dee2e6;
+  background-color: #454A59;
 }

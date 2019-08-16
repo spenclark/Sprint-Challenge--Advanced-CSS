@@ -6,14 +6,26 @@
     background-color: @nav-bg;
     border: 2px  @nav-border solid;
     padding: 1% 0%;
+
+
     .center-layout(center, center);
     .nav-header{
         font-size: 5rem;
         padding: 1% 0%;
+        @media @phone {
+            width: 100%;
+            font-size: 3rem;
+          }
+    
      }
     .nav-links{
         width: 60%;
         font-size: 3rem;
+        @media @phone {
+            width: 100%;
+            font-size: 1rem;
+          }
+    
         nav{ 
         a{color: @nav-font;
         text-decoration: none;
@@ -24,3 +36,4 @@
 
     }
 }
+

@@ -5,31 +5,28 @@
 @color3: #32A7EF;
 @color4: ivory;
 
-@center: center;
+@center-flex: center;
 
 
 .center-layout(@center-v, @center-h){
 	display: flex; 
 	justify-content: @center-h;
-	align-items: @center-v;
+    align-items: @center-v;
 }
 // form mixin
 .form-parent-mix{
     display: flex;
     flex-direction: column;
 }
-.form-child-mix{
-    display: flex; 
-	justify-content: @center;
-    align-items: @center;
-    width: 100%;
-}
+
 
 // btn
 
 .button-mixin{
     background-color: @btn-bg-color;
-    color: @color4;
-    border-radius: 5px;
+    &:hover{
+        color: @border-real;
+        background-color: @river-bend
+    }
     .center-layout(center, center);
 }

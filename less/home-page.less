@@ -58,9 +58,16 @@
       }
 
       .btn{
-        width: 25%;
-        padding: 4% 5%;
-        .button-mixin()
+        width: 50%;
+        a{
+          padding: 10px 30px;
+          color: @color4;
+          font-size: 2rem;
+          text-decoration: none;
+          border-radius: 5px;
+          .button-mixin();
+        }
+       
        }
      }
 
@@ -78,3 +85,31 @@
 }// home
 
 // signup.html
+
+.form{
+  margin-top: 5%;
+
+}
+.form-class{
+  .form-box{
+    padding: 1% 0%;
+    &:hover{
+      border: 1px @color3 solid;
+    }
+    
+  }
+  .form-parent-mix();
+}
+
+.form-btn{
+  padding: 10px 30px;
+  color: @color4;
+  font-size: 2rem;
+ 
+  border-radius: 5px;
+  a{
+    text-decoration: none;
+    color: @color4;
+  }
+  .button-mixin();
+}
